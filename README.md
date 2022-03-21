@@ -11,6 +11,6 @@ Finished date:
 Copy the `bar.c` into your project and include the `bar.h`.
 
 ```c
-void programBar(char* info, unsigned long block, unsigned long total) {
+void programBar(char* info, unsigned long block, unsigned long total);
 void freeProgramBar();
 ```
