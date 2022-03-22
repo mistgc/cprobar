@@ -1,7 +1,5 @@
 #include "bar.h"
-
-static char* arr = NULL;
-static char* fmtStr_info = NULL;
+static char* arr = NULL; static char* fmtStr_info = NULL;
 static char* fmtStr_bar = NULL;
 static char* bar = NULL;
 static char* label = "-\\|/";
@@ -80,12 +78,20 @@ void programBar(char* info, unsigned long block, unsigned long total) {
  *	Free the memory which used draw program bar.
  */
 void freeProgramBar() {
-	if(arr != NULL)
+	if(arr != NULL) {
 		free(arr);
-	if(fmtStr_info != NULL)
+		arr = NULL;
+	}
+	if(fmtStr_info != NULL) {
 		free(fmtStr_info);
-	if(fmtStr_bar != NULL)
+		fmtStr_info = NULL;
+	}
+	if(fmtStr_bar != NULL) {
 		free(fmtStr_bar);
-	if(bar != NULL)
+		fmtStr_bar = NULL;
+	}
+	if(bar != NULL) {
 		free(bar);
+		bar = NULL;
+	}
 }
