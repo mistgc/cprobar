@@ -1,4 +1,4 @@
-# c program bar
+# c progress bar
 Project: C Program bar (aka cprobar)
 
 Created date:
